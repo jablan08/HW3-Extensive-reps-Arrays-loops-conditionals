@@ -29,13 +29,13 @@ for (let i = 0; i < 20; i++) {
 const arr1 = ["Fizz", "Buzz", "FizzBuzz"];
  for (let i = 0; i <= 100; i++) {
      if (i % 3 ===0 && i % 5 === 0) {
-        console.log("FizzBuzz");
+        console.log(arr1[2]);
      }
      else if (i % 5 === 0) {
-         console.log("Buzz");
+         console.log(arr1[1]);
      }
      else if (i % 3 ===0) {
-        console.log("Fizz");
+        console.log(arr1[0]);
      }
      else {
          console.log(i);
@@ -43,7 +43,22 @@ const arr1 = ["Fizz", "Buzz", "FizzBuzz"];
  };
 
 // Getting to Know You
+const kenny = ["Kenny", 1000, "Austin"];
+const jimHaff = ["Jim H", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const jimClark = ["Jim C", 186, "LA"];
+const ryan = ["Ryan", 65, "Denver"];
 
+kenny[0] = "Gameboy";
+jimClark[1]++
+console.log(jimClark);
+ryan[2] = "Gotham City";
+reuben.splice(2, 1, "Chicago");
+console.log(reuben);
+jimHaff.splice(2,1,"Las Vegas", "Hawaii", "California");
+console.log(jimHaff);
+jimHaff.splice(2,2);
+console.log(jimHaff);
 // Yell at Ninja Turtles
 
 
