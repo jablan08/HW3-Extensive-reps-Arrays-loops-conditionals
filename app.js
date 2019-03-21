@@ -109,12 +109,16 @@ console.log("Tomorrow Kristyn will wear " + thomsCloset[1][0] + ", a " + thomsCl
 for (let i = 0; i < kristynsCloset.length; i++) {
     console.log("WHIRR: Now washing " + kristynsCloset[i] + ".");
 }
+
+// Inventory
 for (let i = 0; i < thomsCloset.length; i++) {
     console.log(thomsCloset[i]);
 }
-
-// Inventory
-
-
-// Multiple of 3 and 5
+let sum = 0;
+for (let i = 1000; i > 0; i--) {
+    if (i % 3 === 0 || i % 5 ===0) {
+        sum += i; 
+    }
+}
+console.log(sum);
 
