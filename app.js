@@ -60,10 +60,51 @@ console.log(jimHaff);
 jimHaff.splice(2,2);
 console.log(jimHaff);
 // Yell at Ninja Turtles
-
+const ninjas = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+for (let i = 0; i < ninjas.length; i++) {
+    console.log(ninjas[i].toUpperCase());
+}
 
 //Return of the Closets
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
 
+let lostShoe = kristynsCloset.shift();
+console.log(lostShoe);
+thomsCloset[2].splice(0, 0, lostShoe);
+console.log(thomsCloset);
+
+console.log("Tonight Kristyn will wear a " + kristynsCloset[2] + ", " + kristynsCloset[3] + ", and " + kristynsCloset[0] + ".");
+console.log ("Tom will wear a " + thomsCloset[0][0] + ", " + thomsCloset[1][1] + ", and " + thomsCloset[2][3] + ".");
+console.log("Tomorrow Kristyn will wear " + thomsCloset[1][0] + ", a " + thomsCloset[0][3] + ", and a " + kristynsCloset[4] + ".");
 // Dirty Laundry
 
 // Inventory
