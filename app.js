@@ -106,6 +106,12 @@ console.log("Tonight Kristyn will wear a " + kristynsCloset[2] + ", " + kristyns
 console.log ("Tom will wear a " + thomsCloset[0][0] + ", " + thomsCloset[1][1] + ", and " + thomsCloset[2][3] + ".");
 console.log("Tomorrow Kristyn will wear " + thomsCloset[1][0] + ", a " + thomsCloset[0][3] + ", and a " + kristynsCloset[4] + ".");
 // Dirty Laundry
+for (let i = 0; i < kristynsCloset.length; i++) {
+    console.log("WHIRR: Now washing " + kristynsCloset[i] + ".");
+}
+for (let i = 0; i < thomsCloset.length; i++) {
+    console.log(thomsCloset[i]);
+}
 
 // Inventory
 
