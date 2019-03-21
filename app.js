@@ -59,10 +59,24 @@ jimHaff.splice(2,1,"Las Vegas", "Hawaii", "California");
 console.log(jimHaff);
 jimHaff.splice(2,2);
 console.log(jimHaff);
+
+
 // Yell at Ninja Turtles
 const ninjas = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 for (let i = 0; i < ninjas.length; i++) {
     console.log(ninjas[i].toUpperCase());
+}
+
+//Bonus
+const camelCase = [];
+const ninjas1 = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+for (let i = 0; i < ninjas1.length; i++) {
+    camelCase.push(ninjas1[i].toUpperCase());
+    let chars = camelCase[i].split('');
+    for (let a = 0; a < chars.length; a+=2) {
+        chars[a] = chars[a].toLowerCase();      
+    }
+    console.log(chars.join(""));
 }
 
 //Return of the Closets
@@ -122,3 +136,10 @@ for (let i = 1000; i > 0; i--) {
 }
 console.log(sum);
 
+// Triangles
+let argument = 7;
+let tag = "#"
+for (let i = 0; i < 7; i ++) {
+
+
+}
